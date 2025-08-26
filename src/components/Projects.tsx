@@ -27,8 +27,8 @@ const Projects = () => {
         "CRUD operations",
         "Local JSON storage"
       ],
-      github: "https://github.com/amanyadav/task-manager",
-      demo: "#",
+      github: "https://github.com/Amanyadav72/Task-Manager",
+      demo: "https://github.com/Amanyadav72/Task-Manager",
       type: "Web Application"
     },
     {
@@ -43,8 +43,8 @@ const Projects = () => {
         "Responsive design",
         "Input validation"
       ],
-      github: "https://github.com/amanyadav/guestbook",
-      demo: "#",
+      github: "https://github.com/Amanyadav72/Guestbook",
+      demo: "https://github.com/Amanyadav72/Guestbook",
       type: "Web Application"
     },
     {
@@ -60,8 +60,8 @@ const Projects = () => {
         "Search functionality",
         "Persistent JSON storage"
       ],
-      github: "https://github.com/amanyadav/contact-book",
-      demo: "#",
+      github: "https://github.com/Amanyadav72/contact_book_V-3",
+      demo: "https://github.com/Amanyadav72/contact_book_V-3",
       type: "CLI Application"
     },
     {
@@ -76,8 +76,8 @@ const Projects = () => {
         "Portfolio showcase",
         "Contact form"
       ],
-      github: "https://github.com/amanyadav/portfolio",
-      demo: "#",
+      github: "https://amanyadav72.github.io/Portfolio/",
+      demo: "https://amanyadav72.github.io/Portfolio/",
       type: "Website"
     }
   ];

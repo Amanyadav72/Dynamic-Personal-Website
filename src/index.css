@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Dark theme with electric accents */
+    /* Dark theme with vibrant neon accents */
     --background: 222 47% 8%;
     --foreground: 210 20% 98%;
 
@@ -19,17 +19,17 @@ All colors MUST be HSL.
     --popover: 220 40% 10%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 180 100% 50%;
     --primary-foreground: 222 47% 8%;
-    --primary-glow: 217 91% 70%;
+    --primary-glow: 180 100% 60%;
 
-    --secondary: 271 91% 65%;
+    --secondary: 330 100% 71%;
     --secondary-foreground: 210 20% 98%;
 
     --muted: 220 40% 14%;
     --muted-foreground: 210 20% 60%;
 
-    --accent: 262 83% 58%;
+    --accent: 280 100% 70%;
     --accent-foreground: 210 20% 98%;
 
     --destructive: 0 84% 60%;
@@ -37,19 +37,24 @@ All colors MUST be HSL.
 
     --border: 220 40% 20%;
     --input: 220 40% 15%;
-    --ring: 217 91% 60%;
+    --ring: 180 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(271 91% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    /* Custom vibrant design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(280 100% 70%), hsl(330 100% 71%));
+    --gradient-secondary: linear-gradient(135deg, hsl(280 100% 70%), hsl(330 100% 71%));
     --gradient-dark: linear-gradient(180deg, hsl(222 47% 8%), hsl(220 40% 5%));
     --gradient-card: linear-gradient(135deg, hsl(220 40% 10%), hsl(220 40% 12%));
+    --gradient-neon: linear-gradient(135deg, hsl(180 100% 50%), hsl(280 100% 70%), hsl(330 100% 71%), hsl(30 100% 60%));
+    --gradient-mesh: radial-gradient(at 20% 80%, hsl(180 100% 50% / 0.3) 0%, transparent 50%),
+                     radial-gradient(at 80% 20%, hsl(280 100% 70% / 0.3) 0%, transparent 50%),
+                     radial-gradient(at 40% 40%, hsl(330 100% 71% / 0.2) 0%, transparent 50%);
     
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    --shadow-glow: 0 0 60px hsl(180 100% 50% / 0.4);
     --shadow-card: 0 10px 40px -10px hsl(220 40% 5% / 0.8);
-    --shadow-hover: 0 20px 50px -10px hsl(217 91% 60% / 0.2);
+    --shadow-hover: 0 20px 60px -10px hsl(280 100% 70% / 0.3);
+    --shadow-neon: 0 0 20px hsl(180 100% 50% / 0.8), 0 0 40px hsl(280 100% 70% / 0.6);
     
     --animation-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --animation-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -59,12 +64,12 @@ All colors MUST be HSL.
 
     --sidebar-background: 220 40% 8%;
     --sidebar-foreground: 210 20% 98%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 180 100% 50%;
     --sidebar-primary-foreground: 222 47% 8%;
     --sidebar-accent: 220 40% 12%;
     --sidebar-accent-foreground: 210 20% 98%;
     --sidebar-border: 220 40% 20%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 180 100% 50%;
   }
 
 }
@@ -109,10 +114,57 @@ All colors MUST be HSL.
   }
   
   .glow-text {
-    text-shadow: 0 0 20px hsl(217 91% 60% / 0.5);
+    text-shadow: 0 0 30px hsl(180 100% 50% / 0.8), 0 0 60px hsl(280 100% 70% / 0.6);
   }
   
   .code-block {
     @apply font-mono bg-card text-foreground p-4 rounded-lg border border-border;
+  }
+  
+  .gradient-mesh-bg {
+    background: var(--gradient-mesh);
+  }
+  
+  .neon-border {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--card), var(--card)) padding-box,
+                var(--gradient-primary) border-box;
+  }
+  
+  .hover-neon {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-neon:hover {
+    box-shadow: var(--shadow-neon);
+    transform: translateY(-2px);
+  }
+  
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.5; filter: blur(80px); }
+    50% { opacity: 0.8; filter: blur(60px); }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
   }
 }
