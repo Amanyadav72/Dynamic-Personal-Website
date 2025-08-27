@@ -46,9 +46,15 @@ const Hero = () => {
               <Mail className="mr-2" />
               Contact Me
             </Button>
-            <Button variant="outline" size="lg">
-              <Download className="mr-2" />
-              Download Resume
+            <Button variant="outline" size="lg" asChild>
+              <a 
+                href="https://drive.google.com/file/d/15DhGT7yJ4wq2IbMdzJnZAGEf9MAqhICR/view?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="mr-2" />
+                Download Resume
+              </a>
             </Button>
           </div>
           
