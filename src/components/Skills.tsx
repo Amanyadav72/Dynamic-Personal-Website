@@ -18,17 +18,17 @@ const Skills = () => {
       icon: <Code2 className="text-primary" />,
       skills: [
         { name: "Python", level: 90 },
-        { name: "JavaScript", level: 75 },
-        { name: "C++", level: 70 },
-        { name: "C", level: 65 },
+        { name: "JavaScript", level: 70 },
+        { name: "C++", level: 75 },
+        { name: "C", level: 85 },
       ]
     },
     {
       title: "Frameworks",
       icon: <Braces className="text-secondary" />,
       skills: [
-        { name: "Flask", level: 85 },
-        { name: "SQLAlchemy", level: 80 },
+        { name: "Flask", level: 95 },
+        { name: "SQLAlchemy", level: 90 },
         { name: "React", level: 70 },
         { name: "FastAPI", level: 75 },
       ]
@@ -39,8 +39,8 @@ const Skills = () => {
       skills: [
         { name: "MySQL", level: 85 },
         { name: "SQLite", level: 90 },
-        { name: "PostgreSQL", level: 75 },
-        { name: "MongoDB", level: 70 },
+        { name: "PostgreSQL", level: 65 },
+        { name: "MongoDB", level: 65 },
       ]
     },
     {
