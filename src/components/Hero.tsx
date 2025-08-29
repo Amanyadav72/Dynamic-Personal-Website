@@ -42,7 +42,13 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <Button variant="gradient" size="lg">
+            <Button 
+              variant="gradient" 
+              size="lg"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <Mail className="mr-2" />
               Contact Me
             </Button>
