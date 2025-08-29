@@ -54,7 +54,7 @@ const Hero = () => {
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a 
-                href="https://docs.google.com/document/d/1FLvavJZ1p3ADLb7J0NXEuu-2HzLgvsda/edit?usp=sharing&ouid=110509354779069339202&rtpof=true&sd=true"
+                href="https://drive.google.com/file/d/1z7ZOUoPnrzeq-q_dqVC57LdV7O-xx4HP/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
