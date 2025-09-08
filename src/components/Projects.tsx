@@ -18,8 +18,8 @@ const Projects = () => {
     {
       title: "Task Manager",
       description: "A web-based Task Manager built with Flask",
-      longDescription: "This app lets you add tasks with deadlines, mark them as complete, and delete them (CRUD operation). Tasks are stored in a local JSON file (no SQL database required — just JSON storage) for easy management.",
-      technologies: ["Flask", "Python", "JSON", "HTML/CSS", "JavaScript"],
+      longDescription: "This app lets each user login and add tasks with deadlines, mark them as complete, and delete them (CRUD operation). Tasks are stored in a local SQLite file for easy management.",
+      technologies: ["Flask", "Python", "SQLite", "HTML/CSS", "JavaScript"],
       features: [
         "Add tasks with deadlines",
         "Mark tasks as complete",
@@ -27,8 +27,8 @@ const Projects = () => {
         "CRUD operations",
         "Local JSON storage"
       ],
-      github: "https://github.com/Amanyadav72/Task-Manager",
-      demo: "https://github.com/Amanyadav72/Task-Manager",
+      github: "https://github.com/Amanyadav72/Task-Manager-V-2",
+      demo: "https://task-manager-pro-dacs.onrender.com/login",
       type: "Web Application"
     },
     {
