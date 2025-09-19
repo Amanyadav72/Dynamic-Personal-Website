@@ -18,18 +18,36 @@ const Projects = () => {
     {
       title: "Task Manager",
       description: "A web-based Task Manager built with Flask",
-      longDescription: "This app lets each user login and add tasks with deadlines, mark them as complete, and delete them (CRUD operation). Tasks are stored in a local SQLite file for easy management.",
-      technologies: ["Flask", "Python", "SQLite", "HTML/CSS", "JavaScript"],
+      longDescription: "A modern, feature-rich task management web application built with Flask. Stay organized and boost your productivity with an intuitive interface, smart features, and responsive design.",
+      technologies: ["Flask", "Python", "SQLAlchemy", "HTML/CSS","Gunicorn","Render","JavaScript"],
       features: [
-        "Add tasks with deadlines",
-        "Mark tasks as complete",
-        "Delete tasks",
-        "CRUD operations",
-        "Local JSON storage"
+        "Create & Edit Tasks with deadlines",
+        "Personal Workspaces",
+        "Progress Dashboard",
+        "PWA Ready",
+        "Interactive Animations",
+        "Secure Authentication"
       ],
       github: "https://github.com/Amanyadav72/Task-Manager-V-2",
       demo: "https://task-manager-pro-dacs.onrender.com/login",
       type: "Web Application"
+    },
+    {
+      title: "Crypto Trading Bot",
+      description: "A CLI-Based Trading Bot for Binance USDT-M Futures can place different types of order ",
+      longDescription: "Built automated trading bot for Binance USDT-M Futures Testnet with multiple order types. Implemented Market, Limit, Stop-Limit, OCO, and TWAP order execution strategies. Developed comprehensive logging system and robust error handling mechanisms. Created intuitive command-line interface for real-time trading operations. ",
+      technologies: ["Python","Binance API","CLI Interface","Error Handling","Logging"],
+      features: [
+        "Place Market, Limit, Stop-Limit, OCO and TWAP orders",
+        "CLI Interface",
+        "Robust logging",
+        "Error handling mechanisms",
+        "Real-time trading operations",
+        "Integrated Binance API"
+      ],
+      github: "https://github.com/Amanyadav72/Aman-Binance-Bot",
+      demo: "https://github.com/Amanyadav72/Aman-Binance-Bot",
+      type: "CLI Application"
     },
     {
       title: "Guestbook",
@@ -47,23 +65,7 @@ const Projects = () => {
       demo: "https://github.com/Amanyadav72/Guestbook",
       type: "Web Application"
     },
-    {
-      title: "Contact Book",
-      description: "Python-based Contact Book application",
-      longDescription: "A simple, interactive Contact Book that allows users to add, view, edit, delete, and search contacts. All data is stored persistently in a local JSON file.",
-      technologies: ["Python", "JSON", "File I/O", "CLI"],
-      features: [
-        "Add new contacts",
-        "View all contacts",
-        "Edit existing contacts",
-        "Delete contacts",
-        "Search functionality",
-        "Persistent JSON storage"
-      ],
-      github: "https://github.com/Amanyadav72/contact_book_V-3",
-      demo: "https://github.com/Amanyadav72/contact_book_V-3",
-      type: "CLI Application"
-    },
+    
     {
       title: "Personal Portfolio",
       description: "Dynamic portfolio website using HTML, CSS, and JavaScript",
