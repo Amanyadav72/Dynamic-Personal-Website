@@ -17,16 +17,17 @@ const Projects = () => {
   const projects = [
     {
       title: "Task Manager",
-      description: "A web-based Task Manager built with Flask",
-      longDescription: "A modern, feature-rich task management web application built with Flask. Stay organized and boost your productivity with an intuitive interface, smart features, and responsive design.",
+      description: "A modern, feature-rich task management web application built with Flask. An intuitive interface, smart features, and responsive design.",
+      longDescription: "Built and deployed a Flask-based task manager with user login, task CRUD, deadlines, and priority flags - Integrated Supabase for authentication and real-time data storage  - Added admin-only dashboard, dark mode toggle, and responsive UI  ",
       technologies: ["Flask", "Python", "SQLAlchemy", "HTML/CSS","Gunicorn","Render","JavaScript"],
       features: [
         "Create & Edit Tasks with deadlines",
         "Personal Workspaces",
+        "Secure Authentication",
         "Progress Dashboard",
+        "Admin Dashboard",
         "PWA Ready",
-        "Interactive Animations",
-        "Secure Authentication"
+        "Interactive Animations"
       ],
       github: "https://github.com/Amanyadav72/Task-Manager-V-2",
       demo: "https://task-manager-pro-dacs.onrender.com/login",
