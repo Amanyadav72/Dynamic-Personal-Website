@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Motivated Backend developer with hands-on experience in Python, Flask, and SQLAlchemy. 
+            Motivated Backend developer with hands-on experience in Python, Django, Flask, and PostgreSQL. 
             Skilled at building scalable RESTful APIs and deploying cloud-based applications.
           </p>
           
