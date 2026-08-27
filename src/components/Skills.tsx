@@ -30,7 +30,7 @@ const Skills = () => {
         { name: "Flask", level: 95 },
         { name: "SQLAlchemy", level: 90 },
         { name: "React", level: 75 },
-        { name: "FastAPI", level: 80 },
+        { name: "Django(drf)", level: 100 },
       ]
     },
     {
@@ -39,7 +39,7 @@ const Skills = () => {
       skills: [
         { name: "MySQL", level: 85 },
         { name: "SQLite", level: 90 },
-        { name: "PostgreSQL", level: 65 },
+        { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 65 },
       ]
     },

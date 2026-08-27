@@ -16,6 +16,24 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "ShopHub",
+      description: "",
+      longDescription: "",
+      technologies: ["Flask", "Python", "SQLAlchemy", "HTML/CSS","Gunicorn","Render","JavaScript"],
+      features: [
+        "Create & Edit Tasks with deadlines",
+        "Personal Workspaces",
+        "Secure Authentication",
+        "Progress Dashboard",
+        "Admin Dashboard",
+        "PWA Ready",
+        "Interactive Animations"
+      ],
+      github: "https://github.com/Amanyadav72/Task-Manager-V-2",
+      demo: "https://task-manager-pro-dacs.onrender.com/login",
+      type: "Web Application"
+    },
+    {
       title: "Task Manager",
       description: "A modern, feature-rich task management web application built with Flask. An intuitive interface, smart features, and responsive design.",
       longDescription: "Built and deployed a Flask-based task manager with user login, task CRUD, deadlines, and priority flags - Integrated Supabase for authentication and real-time data storage  - Added admin-only dashboard, dark mode toggle, and responsive UI  ",
