@@ -19,7 +19,7 @@ const Projects = () => {
       title: "ShopHub",
       description: "E-Commerce Web App made with Django.",
       longDescription: "Developed REST API backend for product catalog, cart, and order management with Django REST Framework and JWT Implemented user auth, vendor profiles, product listings (filter/pagination), cart, and order workflows Optimized relational schema with custom QuerySets, TimeStampModel, and image uploads via Pillow Applied permissions, serializers, and environment based settings for secure, scalable deployment Integrated drf-spectacular (OpenAPI docs) and Django Debug Toolbar for monitoring",
-      technologies: ["Flask", "Python", "SQLAlchemy", "HTML/CSS","Gunicorn","Render","JavaScript"],
+      technologies: ["Django", "Python", "PostgreSQL", "HTML/CSS","Gunicorn","Render","JavaScript"],
       features: [
       ],
       github: "https://github.com/Amanyadav72/shophub",
